@@ -7,6 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Days of the Week starting on  <span></span></h1>
+    <ol></ol>
+
+    <script>
+        let daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        console.log(daysOfTheWeek);
+
+        let date = daysOfTheWeek[0];
+        console.log(date);
+
+        let spanElement= document.querySelector('span');
+        console.log(spanElement);
+
+        spanElement.innerText = date;
+
+        // function makeLI(item, index) {
+            
+        //     let list = document.querySelector('ol'); // this line is declaring the ol in the html as a list variable in js
+        //     let liElement = document.createElement('li'); //its creating a li elements in js and declaring it a li variable in js 
+        //     list.appendChild(liElement).innerText = daysOfTheWeek[index]; // this line is giving the li elementa the number of the index(daysOfTheWeek)
+
+        // }
+        
+        // daysOfTheWeek.forEach(makeLI);
+
+        let list = document.querySelector('ol');
+            // this is called a 'for loop'
+        for(i =0; i< daysOfTheWeek.length; i++){
+            let liElement = document.createElement('li');
+            list.appendChild(liElement).innerText = daysOfTheWeek[i];
+        }
+        
+    </script>
 </body>
 </html>
