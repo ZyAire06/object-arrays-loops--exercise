@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Arrays</title>
+</head>
+<body>
+    
+    <script>
+        //three variables declared seperately 
+        // let color1 = 'red';
+        // let color2 = 'green';
+        // let color3 = 'blue';
+
+        //make an array of colors
+        let colors = ['red', 'green', 'blue'];
+        
+
+        let color1 = colors[0];
+        let color2 = colors[1];
+        let color3 = colors[2];
+
+        console.log(color1);
+        console.log(color2);
+        console.log(color3);
+
+        console.log(colors.length);
+
+        function loopThroughColors(item, index, array) {
+            // console.log(`${item} has index number ${index}`);
+            // console.log(array);
+            console.log('yo');
+        }
+
+        colors.forEach(loopThroughColors);
+    </script>
+</body>
+</html>
