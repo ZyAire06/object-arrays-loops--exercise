@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>While Loop 2</title>
 </head>
 <body>
-    
+    <p>executes code as long as a condition is true.</p>
+    <p>When Data is certain and Action is also certain use for loop.</p>
+    <p>When Data is certain and Action is uncertain use while loop.</p>
+
+    <script>
+        const flowers = ["Flower1", "Flower2", "Flower3","Flowe4", "Flower5",];
+
+        let gradenCapacity = 0;
+
+        while (gradenCapacity < 4) {
+            let flowerNum = Math.floor(Math.random() * flowers.length);
+            console.log(`the flowerNum variable is ${flowerNum}`);
+            console.log(`plant flower ${flowers[flowerNum]}`);
+
+            gradenCapacity += 1;
+        }
+
+    </script>
 </body>
 </html>
