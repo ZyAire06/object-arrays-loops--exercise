@@ -7,6 +7,30 @@
     <title> Expand and Search Arrays</title>
 </head>
 <body>
-    
+    <script>
+        //search for teams
+        let teams = ["Yankees", "Rangers", "Blue Jays", "Astros","White Sox", "Rangers"];
+        let index = teams.indexOf("Rangers");
+        let index1 = teams.indexOf("Rangers", 3);
+        console.log(index1);
+
+        let firstindex = teams.indexOf("Rangers");
+        console.log(firstindex);
+        let lastindex = teams.lastIndexOf("Rangers");
+        // console.log(lastindex);
+
+        if(index == -1){
+            console.log(`Item not found`);
+        } 
+        else{
+            console.log(`Item at position: ${index}`);
+        }
+    </script>
+    <!-- <script>
+        let kids = ["Natalie", "Brittany", "Zachary"];
+        kids[3] = "Brandon";
+        kids[5] = "Zy'Aire";
+        console.log(kids);
+    </script> -->
 </body>
 </html>
