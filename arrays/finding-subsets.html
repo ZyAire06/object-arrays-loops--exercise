@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Subsets in Arrays</title>
+    <script src="course_search.js"></script>
+</head>
+<body>
+    
+    <script>
+        //create an array of food items 
+        let menu = [{id: 1, item:"Tacos", category: "Meal", price: 12.29}, 
+                    {id: 2, item:"bruger", category: "Meal", price: .29},
+                    {id: 3, item:"Salad", category: "Meal", price: 8.29},
+                    {id: 4, item:"Ice Tea", category: "Drink", price: 2.19},
+                    {id: 5, item:"Coke", category: "Drink", price: 2.29},
+                ];
+        
+        function getMenuItemsInCategory(menu, category){// defining a function  that has 2 agurements 
+            let matching = [];// empty array 
+            let numItems = menu.length;// delcaring the the length of the array menu as numItems
+            for( let i =0; i <numItems; i++){// for loop that the menu items will loop through 
+                if(menu[i].category == category){//this is a statment is testing to see if the items being loop is the same 
+                   matching.push(menu[i]); // the push is just adding or appending a new value to the array 
+                }
+            }
+            return matching;
+        }
+
+        //show all the drinks 
+        let drinks = getMenuItemsInCategory(menu, "Drink");
+        console.log(drinks);
+        // let numDrinks = drinks.length;
+        // for(let i =0; i <numDrinks; i++){
+        //     console.log(drinks[i]+ "$" + drinks[i].price.toFixed(2)); // old school way
+        //     console.log(`${drinks[i].item} $${drinks[i].price.toFixed(2)}`); //new school way
+        // }
+    </script>
+</body>
+</html>
