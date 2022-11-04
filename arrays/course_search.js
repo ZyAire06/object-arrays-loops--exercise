@@ -45,11 +45,12 @@ let courses = [
            emptyArray.push(courses[i]);
         }
      
+        
+  
      }
      return emptyArray;
   }
  
-  let lastCourse = getAccessToCourses( courses, "PROJ500");
-  console.log(lastCourse);
-  let numofLastCourse = lastCourse.length;
+//   console.log(`this is my course id ${getAccessToCourses(courses[i].CourseId)}`);
   
+console.log(getAccessToCourses(courses, "PROJ500"));
